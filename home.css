@@ -1,0 +1,80 @@
+@import "podstranky/menu.css";
+
+article h1 {
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    color: lightgreen;
+    text-shadow: 2px 2px 0 black, 3px 3px 7px grey;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0px 50px 10px 50px;
+}
+
+.container > div {
+    font-size: 120%;
+    color: lightgreen;
+    background-color: black;
+    text-align: justify;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+article {
+    background-image: none;
+    background-color: black;
+}
+
+.fotka {
+    visibility: visible;
+}
+
+.fotka > img {
+    display: block;
+    max-width: 100%;
+}
+
+#logo {
+    background: url('obrazky/logo.png') no-repeat;
+    background-size: 100px 80px;
+}
+
+@media (min-width: 1000px) {
+    .fotka {
+        visibility: hidden;
+    }
+
+    article {
+        background-image: url('obrazky/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    article h1 {
+        font-size: 5em;
+        text-align: center;
+        margin: 0;
+        color: lightgreen;
+        text-shadow: 2px 2px 0 black, 3px 3px 7px grey;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px 50px 300px 50px;
+    }
+
+    .container > div {
+        padding: 10px;
+    }
+}
